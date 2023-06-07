@@ -2,6 +2,20 @@
 
 <p id="description">Photo Folio merupakan sebuah aplikasi android photo browser sederhana dilengkap dengan beberapa fitur tambahan.</p>
 
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   Browsing foto berdasarkan folder.
+*   Browsing semua foto.
+*   Menekan salah satu foto dan melakukan zoom pada foto.
+*   Melihat detail foto.
+*   Memfavoritkan foto.
+*   Browsing semua foto yang telah difavoritkan.
+*   Share Foto.
+
 <h2>Project Screenshots:</h2>
 
 <img src="https://firebasestorage.googleapis.com/v0/b/kotlinlab-3ecaa.appspot.com/o/282855.jpg?alt=media&amp;token=cc35ff41-d356-4f9a-b0c0-0fca7504feaf&amp;_gl=1*o7d8nw*_ga*MTE0MDk4NDE2Mi4xNjY3MjA5ODE2*_ga_CW55HF8NVT*MTY4NjE0NDc3Ni4zMi4xLjE2ODYxNDQ4MjQuMC4wLjA|width=1px" alt="project-screenshot" width="150" height="400/">
@@ -26,16 +40,4 @@
 
 <img src="https://firebasestorage.googleapis.com/v0/b/kotlinlab-3ecaa.appspot.com/o/282845.jpg?alt=media&amp;token=ad45a369-a3f1-4957-97a0-50c8ac24d1fe&amp;_gl=1*3ia629*_ga*MTE0MDk4NDE2Mi4xNjY3MjA5ODE2*_ga_CW55HF8NVT*MTY4NjE0NDc3Ni4zMi4xLjE2ODYxNDUwMjUuMC4wLjA." alt="project-screenshot" width="150" height="400/">
 
-  
-  
-<h2>🧐 Features</h2>
 
-Here're some of the project's best features:
-
-*   Browsing foto berdasarkan folder.
-*   Browsing semua foto.
-*   Menekan salah satu foto dan melakukan zoom pada foto.
-*   Melihat detail foto.
-*   Memfavoritkan foto.
-*   Browsing semua foto yang telah difavoritkan.
-*   Share Foto.
