@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/folderFragment">
+
+    <fragment
+        android:id="@+id/folderFragment"
+        android:name="com.cinthya.photofolioapp.ui.folder.FolderFragment"
+        android:label="fragment_folder"
+        tools:layout="@layout/fragment_folder" >
+        <action
+            android:id="@+id/action_folderFragment_to_folderPhotoListFragment"
+            app:destination="@id/folderPhotoListFragment" />
+        <action
+            android:id="@+id/action_folderFragment_to_permissionFragment"
+            app:destination="@id/permissionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allPhotoFragment"
+        android:name="com.cinthya.photofolioapp.ui.all.AllPhotoFragment"
+        android:label="fragment_all_photo"
+        tools:layout="@layout/fragment_all_photo" >
+        <action
+            android:id="@+id/action_allPhotoFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.cinthya.photofolioapp.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/folderPhotoListFragment"
+        android:name="com.cinthya.photofolioapp.ui.folder.list.FolderPhotoListFragment"
+        android:label="fragment_folder_photo_list"
+        tools:layout="@layout/fragment_folder_photo_list" >
+        <argument
+            android:name="folderId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_folderPhotoListFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.cinthya.photofolioapp.ui.photo.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" >
+        <argument
+            android:name="fromWhatFragment"
+            app:argType="integer" />
+        <argument
+            android:name="folderId"
+            app:argType="string" />
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_photoFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionFragment"
+        android:name="com.cinthya.photofolioapp.ui.permission.PermissionFragment"
+        android:label="fragment_permission"
+        tools:layout="@layout/fragment_permission" >
+        <action
+            android:id="@+id/action_permissionFragment_to_folderFragment"
+            app:destination="@id/folderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.cinthya.photofolioapp.ui.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+
+
+</navigation>

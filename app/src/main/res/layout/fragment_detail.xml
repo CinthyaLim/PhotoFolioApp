@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_one"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_percent="0.4"
+        android:orientation="vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv_header_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/waktu_ambil"
+        android:textStyle="bold"
+        android:fontFamily="@font/righteous"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_header_detail_fragment" />
+
+    <TextView
+        android:id="@+id/tv_header_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/nama_berkas"
+        android:fontFamily="@font/righteous"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_detail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_header_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/ukuran"
+        android:fontFamily="@font/righteous"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_detail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_header_height_width"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/panjang_x_lebar"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/righteous"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_size_detail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_header_path"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/path_penyimpanan"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/righteous"
+        app:layout_constraintTop_toBottomOf="@id/tv_height_width_detail"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_time_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="@id/tv_header_time" />
+
+    <TextView
+        android:id="@+id/tv_name_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="@id/tv_header_name" />
+
+    <TextView
+        android:id="@+id/tv_size_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="@id/tv_header_size" />
+
+    <TextView
+        android:id="@+id/tv_height_width_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="@id/tv_header_height_width" />
+
+    <TextView
+        android:id="@+id/tv_path_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="@id/tv_header_path" />
+
+    <include
+        android:id="@+id/layout_header_detail_fragment"
+        layout="@layout/item_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

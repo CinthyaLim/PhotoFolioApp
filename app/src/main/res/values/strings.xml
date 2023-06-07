@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Photo Folio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all">All</string>
+    <string name="folder">Folder</string>
+    <string name="favorite">Favorite</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="format_date">Format date</string>
+    <string name="permission">Halo! Mohon menyetujui perizinan storage agar aplikasi dapat berjalan dengan lancar</string>
+    <string name="perizinan">Perizinan</string>
+    <string name="waktu_ambil">Waktu ambil :</string>
+    <string name="nama_berkas">Nama Berkas :</string>
+    <string name="ukuran">Ukuran :</string>
+    <string name="panjang_x_lebar">Panjang x Lebar :</string>
+    <string name="path_penyimpanan">Path Penyimpanan :</string>
+    <string name="all_folder">All Folder</string>
+    <string name="all_photo">All Photo</string>
+</resources>

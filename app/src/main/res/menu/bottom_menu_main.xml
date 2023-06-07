@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/allPhotoFragment"
+        android:icon="@drawable/ic_baseline_photo_library_24"
+        android:title="@string/all"
+        />
+
+    <item
+        android:id="@+id/folderFragment"
+        android:icon="@drawable/ic_baseline_folder_24"
+        android:title="@string/folder"
+        />
+
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/favorite"
+        />
+
+
+</menu>
