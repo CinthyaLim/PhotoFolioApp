@@ -29,7 +29,7 @@ class FolderAdapter(private val photoFolderList: List<PhotoFolder>): RecyclerVie
                     .apply(requestOptions)
                     .into(ivPhotoFolder)
                 itemView.setOnClickListener {
-                    onItemClickCallback.onItemClicked(content.folderId)
+                    onItemClickCallback.onItemClicked(content.folderId, content.folderName)
                 }
             }
         }
@@ -48,6 +48,6 @@ class FolderAdapter(private val photoFolderList: List<PhotoFolder>): RecyclerVie
     override fun getItemCount(): Int = photoFolderList.size
 
     interface OnItemClickCallback {
-        fun onItemClicked(data: String)
+        fun onItemClicked(data: String, folderName : String)
     }
 }

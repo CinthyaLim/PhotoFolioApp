@@ -70,8 +70,6 @@ class FolderFragment : Fragment() {
 
     private fun callViewModel(){
         viewModel.getImagesByFolders(requireActivity().contentResolver).observe(requireActivity()){
-            Log.d("FolderFragment", "Masuk!")
-            Log.d("FolderFragment", "${it.toString()}")
             if(it.isNotEmpty()){
                 setUpRecyclerView(it)
             }else{
@@ -88,8 +86,8 @@ class FolderFragment : Fragment() {
         }
 
         folderAdapter.setOnItemClickCallback(object :FolderAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: String) {
-                val go = FolderFragmentDirections.actionFolderFragmentToFolderPhotoListFragment(data)
+            override fun onItemClicked(data: String, folderName: String) {
+                val go = FolderFragmentDirections.actionFolderFragmentToFolderPhotoListFragment(data, folderName)
                 findNavController().navigate(go)
             }
         })

@@ -29,6 +29,12 @@ class FolderPhotoListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val folderId = FolderPhotoListFragmentArgs.fromBundle(arguments as Bundle).folderId
+        val folderName = FolderPhotoListFragmentArgs.fromBundle(arguments as Bundle).folderName
+
+        binding.tvHeaderFolderList.text = folderName
+        binding.btnBackToFolder.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
         setUpData(folderId)
     }
 

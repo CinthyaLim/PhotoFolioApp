@@ -46,6 +46,9 @@
         <action
             android:id="@+id/action_folderPhotoListFragment_to_photoFragment"
             app:destination="@id/photoFragment" />
+        <argument
+            android:name="folderName"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/photoFragment"
